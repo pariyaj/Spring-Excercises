@@ -1,2 +1,2 @@
 # spring-excercise
-To make Spring Core get easy!
+To make Spring Core easy!
