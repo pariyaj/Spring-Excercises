@@ -1,0 +1,5 @@
+Example: "#{'${bankiran.username}'.toUpperCase()}"
+
+"#{} uses SEL or Spring Expression Language
+'${}' gets the value of bankiran.usename
+toUpperCase() makes all the letters of one string to upper case letters
