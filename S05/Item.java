@@ -7,7 +7,7 @@ public class Item {
 	private String name;
 	
 	@OneToOne(cascade = CascadeType.ALL)
-  @JoinColumn(name = "category_id", referencedColumnName = "id")
+        @JoinColumn(name = "category_id", referencedColumnName = "id")
 	private Category category;
 	
 	
