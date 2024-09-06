@@ -30,9 +30,11 @@ public class ItemsCrud {
     	        transaction.commit();
 
                 List<Items> allCorruptedItems = session.createQuery("from CorruptedItem where citem_id = :item_id" , CorruptedItems.class).getResultList();
-                if(reason){
+                if(allCorruptedItems.size > 0 )
+                    for (CorruptedItem corruptedItem : corruptedItems)
+                {
                     transaction.begin();
-    	            session.remove( CorruptedItems.get(citem_id) );
+    	            session.remove( CorruptedItem );
          	    transaction.commit();
 		}    	
 	}
