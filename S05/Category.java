@@ -4,7 +4,7 @@ public class Category {
 	@Id
 	private long id;	
 	private String name;
-  @OneToOne(mappedBy = "category_id")
+        @OneToOne(mappedBy = "category_id")
 	private String location;
 	
 	public Category() {};
