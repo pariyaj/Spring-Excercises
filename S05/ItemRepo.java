@@ -1,4 +1,5 @@
 public interface ItemJpaRepository extends CrudRepository<Item, Integer> {
+	List<Item> findAll(String name);
 	List<Item> findByName(String name);
 	List<Item> findByCategoryName(String name);
 	List<Item> findByNameStartingWith(String name);
